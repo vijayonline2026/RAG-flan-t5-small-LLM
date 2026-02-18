@@ -14,5 +14,6 @@ def create_chunks(text:str , chunk_size:int = settings.CHUNK_LIMIT, overlap:int 
         chunk_text = tokens[start:end]
         chunk_data = tokenizer.decode(chunk_text)
         chunks.append(chunk_data)
+        #start += end - overlap
         start += chunk_size - overlap
     return chunks

@@ -11,9 +11,10 @@ class Settings(BaseSettings):
     FAISS_VECTOR_DIMENSION: int = 384
     CHUNK_LIMIT: int = 300
     CHUNK_OVERLAP_LIMIT: int = 50
-    LLM_MODEL_NAME: str
-    DEVICE_MAP: str
-    MAX_NEW_TOKENS: int
+    LLM_MODEL_NAME: str = "google/flan-t5-small"
+    DEVICE_MAP:str = "auto"
+    MAX_NEW_TOKENS:int = 300
+    TEMPERATURE:float = 0.3
     model_config = SettingsConfigDict(
         env_file=".env",
         extra="ignore"
