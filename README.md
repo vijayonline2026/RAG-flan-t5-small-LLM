@@ -1,4 +1,4 @@
-# llm-foundations-and-rag
+# RAG-flan-t5-small-LLM
 
 # 🚀 Lightweight Open-Source RAG System
 
